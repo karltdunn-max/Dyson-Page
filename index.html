@@ -142,6 +142,25 @@ body::after{
 @keyframes tirespin{to{transform:rotate(360deg)}}
 .tire-meaning{max-width:560px;margin:48px auto 0;font-family:'Lora',serif;font-size:18px;font-style:italic;line-height:1.8;color:var(--light);}
 
+/* ─── WHO HE IS ─── */
+.whoheis{padding:100px 32px;max-width:960px;margin:0 auto;}
+.whoheis h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(52px,8vw,100px);line-height:0.88;letter-spacing:0.02em;color:var(--off-white);margin-bottom:56px;}
+.whoheis h2 em{font-style:normal;color:var(--amber);}
+.statement-stack{display:flex;flex-direction:column;gap:2px;margin-bottom:64px;}
+.statement{display:grid;grid-template-columns:4px 1fr;gap:36px;align-items:start;background:var(--steel);padding:44px 48px;transition:background 0.3s;position:relative;overflow:hidden;}
+.statement:hover{background:#30353f}
+.statement-bar{background:var(--red);height:100%;min-height:60px;transition:background 0.3s;}
+.statement:hover .statement-bar{background:var(--amber);}
+.statement-content{}
+.statement-number{font-family:'Bebas Neue',sans-serif;font-size:11px;letter-spacing:0.4em;color:var(--red);margin-bottom:12px;display:block;}
+.statement-headline{font-family:'Bebas Neue',sans-serif;font-size:clamp(28px,4vw,48px);line-height:0.92;letter-spacing:0.02em;color:var(--off-white);margin-bottom:16px;}
+.statement-body{font-family:'Lora',serif;font-size:16px;line-height:1.88;color:var(--light);}
+.statement-body strong{color:var(--off-white);}
+.statement-body em{color:var(--amber);}
+.whoheis-close{background:var(--red);padding:52px 56px;margin-top:2px;}
+.whoheis-close p{font-family:'Bebas Neue',sans-serif;font-size:clamp(28px,4vw,52px);line-height:1;letter-spacing:0.03em;color:white;}
+.whoheis-close p span{color:rgba(255,255,255,0.55);}
+
 /* ─── NEEDS ─── */
 .needs-section{padding:100px 32px;max-width:900px;margin:0 auto;}
 .needs-section h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(44px,6vw,80px);line-height:0.95;margin-bottom:56px;letter-spacing:0.02em;}
@@ -383,32 +402,55 @@ footer a{color:var(--amber);text-decoration:none}
 </section>
 
 <!-- NEEDS -->
-<section class="needs-section">
-  <div class="section-eyebrow reveal">What he needs</div>
-  <h2 class="reveal">The Gap Between<br><em>Surviving</em> &amp; Living.</h2>
-  <div class="needs-grid">
-    <div class="need-item reveal">
-      <span class="need-icon">🚗</span>
-      <div class="need-title">Transportation</div>
-      <div class="need-desc">Right now Dyson sits outside a McDonald's to use the WiFi. He has the skills to work, fix phones, help people with technology — but without a car, he can't get to where opportunity lives. Transportation is freedom.</div>
+<!-- WHO HE IS -->
+<section class="whoheis">
+  <div class="section-eyebrow reveal">This is not a charity case</div>
+  <h2 class="reveal">He Never<br><em>Stopped Rolling.</em></h2>
+
+  <div class="statement-stack">
+    <div class="statement reveal">
+      <div class="statement-bar"></div>
+      <div class="statement-content">
+        <span class="statement-number">01 — THE SKILL</span>
+        <div class="statement-headline">He Taught Himself Technology<br>From the Street.</div>
+        <div class="statement-body">No classroom. No teacher. No desk. Just a phone he <strong>modified himself</strong> to do things it wasn't designed to do. Sitting outside a McDonald's, Dyson became a self-taught tech professional. When someone asked what he did for work — he didn't say <em>"I'm homeless."</em> He said: <strong>"I work on PCs."</strong> Because that's who he is. Not where he sleeps.</div>
+      </div>
     </div>
-    <div class="need-item reveal">
-      <span class="need-icon">🏠</span>
-      <div class="need-title">Housing Deposit</div>
-      <div class="need-desc">An address changes everything. Without one, you can't open a bank account, get hired, or access services. A deposit and first month's rent means Dyson can stop surviving and start living.</div>
+
+    <div class="statement reveal">
+      <div class="statement-bar"></div>
+      <div class="statement-content">
+        <span class="statement-number">02 — THE CHARACTER</span>
+        <div class="statement-headline">He Gave the Money Back<br>and Got a Haircut.</div>
+        <div class="statement-body">When someone finally extended a hand and offered him cash — <strong>Dyson gave it back.</strong> He didn't want charity. He wanted dignity. He took what little he had and walked into a barbershop. He came out looking like the man he already knows he is. <em>That is not the act of someone who gave up.</em> That is the act of someone who was never allowed to start.</div>
+      </div>
     </div>
-    <div class="need-item reveal">
-      <span class="need-icon">💻</span>
-      <div class="need-title">Tech Tools</div>
-      <div class="need-desc">He already has a Chromebook thanks to a generous stranger. He needs a data plan, access to courses, and the basic digital tools to launch himself as the tech professional he already is on the inside.</div>
+
+    <div class="statement reveal">
+      <div class="statement-bar"></div>
+      <div class="statement-content">
+        <span class="statement-number">03 — THE ENDURANCE</span>
+        <div class="statement-headline">Two Years in a Garage.<br>Zero Excuses.</div>
+        <div class="statement-body">Two years. In a stranger's garage. No income. No address. No family. <strong>Most people would have disappeared.</strong> Dyson kept his mind sharp. Kept his skills growing. Kept his dignity intact through all of it. He didn't become bitter. He didn't break. He just kept rolling — like the tire his mother named him for — <em>waiting for the road to get better.</em></div>
+      </div>
     </div>
-    <div class="need-item reveal">
-      <span class="need-icon">🌱</span>
-      <div class="need-title">A Safety Net</div>
-      <div class="need-desc">Every time something goes wrong for someone without money, it sends them backward. A small cushion means one bad day doesn't erase all the progress. It means he can keep rolling — no matter the road.</div>
+
+    <div class="statement reveal">
+      <div class="statement-bar"></div>
+      <div class="statement-content">
+        <span class="statement-number">04 — THE TRUTH</span>
+        <div class="statement-headline">The System Failed Him.<br>He Didn't Fail Himself.</div>
+        <div class="statement-body">Dyson didn't end up on the street because he made bad choices. He ended up there because <strong>every support structure failed at once.</strong> No family. No safety net. No floor. The same world that handed some people houses left him in a garage for two years with nothing but a phone and a will to keep going. <em>That's not a character flaw. That's circumstance.</em> And circumstance can be changed.</div>
+      </div>
     </div>
   </div>
+
+  <div class="whoheis-close reveal">
+    <p>This is a man with <span>skills, drive, and dignity.</span><br>He doesn't need saving.<br>He needs a door opened.</p>
+  </div>
 </section>
+
+<hr class="divider"/>
 
 <!-- PROOF -->
 <section class="proof-section">
